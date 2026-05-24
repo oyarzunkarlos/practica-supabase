@@ -1,0 +1,40 @@
+        body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        
+        /* Grid */
+        #grid-productos { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-bottom: 30px; }
+        .producto-card { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); text-align: center; transition: transform 0.2s; }
+        .producto-card:hover { transform: translateY(-3px); }
+        .precio { color: #27ae60; font-weight: bold; font-size: 1.2rem; margin: 10px 0; }
+        
+        /* Botones Generales */
+        button { border: none; padding: 10px 15px; border-radius: 6px; cursor: pointer; width: 100%; font-weight: 600; transition: all 0.2s; }
+        button:active { transform: scale(0.98); }
+        
+        /* Botón Agregar */
+        .btn-agregar { background: #3498db; color: white; }
+        .btn-agregar:hover { background: #2980b9; }
+        .btn-agregar.agregado { background-color: #27ae60 !important; transform: scale(0.95); }
+
+        /* Carrito */
+        #carrito-container { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .carrito-item { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #eee; padding: 12px 0; }
+        .carrito-info strong { display: block; color: #2c3e50; }
+        .carrito-cantidad { color: #7f8c8d; font-size: 0.9rem; }
+        .carrito-subtotal { font-weight: bold; color: #2c3e50; margin-right: 10px; }
+        
+        /* Botones Carrito */
+        .btn-eliminar { background: #fee; color: #e74c3c; width: auto; padding: 5px 10px; font-size: 0.9rem; }
+        .btn-eliminar:hover { background: #e74c3c; color: white; }
+        
+        .btn-whatsapp { 
+            background: #25D366; color: white; font-size: 1.1rem; 
+            display: flex; align-items: center; justify-content: center; gap: 10px;
+            margin-top: 20px; 
+        }
+        .btn-whatsapp:hover { background: #128C7E; }
+        
+        .btn-vaciar { background: #95a5a6; color: white; margin-top: 10px; }
+        .btn-vaciar:hover { background: #7f8c8d; }
+
+        .carrito-vacio { text-align: center; color: #95a5a6; font-style: italic; padding: 20px; }
